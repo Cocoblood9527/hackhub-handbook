@@ -179,6 +179,8 @@ $('q').addEventListener('keydown',e=>{ if(e.key==='Enter') doSearch(); });
 $('q').addEventListener('input',e=>{ if(!e.target.value.trim()&&state.view==='search') navHome(); });
 window.navHome=navHome; window.openCat=openCat; window.openArt=openArt;
 function route(){ const h=location.hash.slice(1);
+  if(h==='home'||h===''){ navHome(); return; }
+  if(h==='search'){ if(state.view==='search'&&state.search) return; navHome(); return; }
   if(h.startsWith('art-')){ const id=h.slice(4); const a=DATA.arts.find(x=>x.id===id); if(a){ state={view:'art',cat:a.cat,art:id,search:''}; render(); return; } }
   if(h.startsWith('cat-')){ const c=h.slice(4); if(DATA.cats[c]){ openCat(c); return; } }
   navHome();

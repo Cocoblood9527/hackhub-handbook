@@ -86,9 +86,14 @@ const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>
 function unescape2(s){
   return s.replace(/\\`/g,'`').replace(/\\\$/g,'$').replace(/\\\\n/g,'\n').replace(/\\n/g,'\n').replace(/\\\\/g,'\\');
 }
+const HTML_OK = /<\/?(?:span|b|i|em|strong)(?:\s+style\s*=\s*"[^"]*")?\s*\/?>|<br\s*\/?>/gi;
 function md2html(md){
   const lines = md.split(/\r?\n/); let out=[],inCode=false,codeBuf=[],inList=false,para=[];
-  const inline = t => esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
+  const inline = t => { const keep=[];
+    t = String(t).replace(HTML_OK, m => { keep.push(m); return '\u0001'+(keep.length-1)+'\u0001'; });
+    let h = esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
+    return h.replace(/\u0001(\d+)\u0001/g, (m,i)=>keep[+i]);
+  };
   const flushPara=()=>{ if(para.length){ out.push('<p>'+para.map(inline).join(' ')+'</p>'); para=[]; } };
   for(const raw of lines){ const line=raw.trimEnd();
     if(line.startsWith('```')){ flushPara(); if(inCode){ out.push('<pre class="code">'+esc(codeBuf.join('\n'))+'</pre>'); codeBuf=[]; inCode=false; } else inCode=true; continue; }
@@ -146,7 +151,7 @@ function renderContent(){
       const ci=body.toLowerCase().indexOf(q);
       if(!ti&&ci<0) return null;
       let ex='';
-      if(ci>=0){ const start=Math.max(0,ci-40); ex=((start>0?'…':'')+body.slice(start,ci+q.length+80).replace(/[#*`\\]/g,'').replace(/\n+/g,' ')+'…'); }
+      if(ci>=0){ const start=Math.max(0,ci-40); ex=((start>0?'…':'')+body.slice(start,ci+q.length+80).replace(/<[^>]*>/g,'').replace(/[#*`\\]/g,'').replace(/\n+/g,' ')+'…'); }
       return {a, ex: esc(ex).replace(re,'<mark>$1</mark>')};
     }).filter(Boolean);
     let h='<div class="handbook-content"><h1>'+resultsN(hits.length,esc(state.search))+'</h1>';

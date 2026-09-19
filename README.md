@@ -1,8 +1,14 @@
-# Hackhub Handbook (PDF)
+# Hackhub Handbook (PDF + 可交互 HTML)
 
-《Hackhub》游戏内置手册（Handbook）的完整整理版，中英双语 PDF。排版 1:1 复刻游戏内 Handbook 窗口：每篇文章一页，含标题栏、搜索行、面包屑和**左侧栏文章导航（PDF 内可点击跳转）**，并带目录书签。
+《Hackhub》游戏内置手册（Handbook）的完整整理版，中英双语。提供两种形式：
 
-Complete collection of the in-game Handbook from **Hackhub**, in Simplified Chinese & English PDF. Layout replicates the in-game Handbook window: one page per article with title bar, search row, breadcrumb and a **left sidebar article navigation (clickable inside the PDF)**, plus bookmarked table of contents.
+- **PDF**：排版 1:1 复刻游戏内 Handbook 窗口，每篇文章一页，含标题栏、搜索行、面包屑和**左侧栏文章导航（PDF 内可点击跳转）**，并带目录书签。
+- **可交互 HTML**：单文件网页版，复刻游戏窗口外观，**顶部搜索栏真实可用**（全文检索 + 命中高亮 + 结果摘要），左侧栏导航、分类卡片、面包屑均可点击，无需联网、双击即用。
+
+Complete collection of the in-game Handbook from **Hackhub**, in Simplified Chinese & English. Two formats:
+
+- **PDF** — replicates the in-game Handbook window: one page per article with title bar, search row, breadcrumb and a **clickable left sidebar navigation**, plus bookmarked table of contents.
+- **Interactive HTML** — a single-file web version that mirrors the game window with a **working search bar** (full-text search, highlighted hits, result excerpts). Sidebar nav, category cards and breadcrumbs are all clickable. No network needed — just open the file.
 
 ## 内容 Contents
 
@@ -17,6 +23,11 @@ Complete collection of the in-game Handbook from **Hackhub**, in Simplified Chin
 |---|---|
 | `hackhub-handbook-zh.pdf` | 简体中文完整版（游戏窗口式排版） |
 | `hackhub-handbook-en.pdf` | English complete edition (game-window layout) |
+| `hackhub-handbook-interactive-zh.html` | 中文可交互网页版（含真实搜索栏），下载后双击打开 |
+| `hackhub-handbook-interactive-en.html` | English interactive web edition with a working search bar |
+
+> 交互式 HTML 为单文件、离线可用。GitHub 网页预览会以纯文本显示 HTML，请**下载后用浏览器打开**，或启用 GitHub Pages 后经 Pages 访问。
+> The interactive HTML is a single offline file. GitHub renders `.html` as plain text in-browser — **download and open it locally**, or serve it via GitHub Pages.
 
 ## 来源 Source
 

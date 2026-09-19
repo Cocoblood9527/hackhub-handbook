@@ -7,9 +7,9 @@ Complete collection of the in-game Handbook from **Hackhub**, in Simplified Chin
 ## 内容 Contents
 
 - 8 个章节 categories：账户 Accounts / 挖掘 Digging / Metasploit / 脚本编写 Scripting / 怀疑 Suspicion / 终端命令 Terminal Commands / Python 模块 Python Modules / Online World
-- 89 篇文章 articles，全文完整提取（中文版 164 页 / 英文版 167 页）
+- 89 篇文章 articles，全文完整提取（中文版 120 页 / 英文版 126 页）
 - 内容与游戏内文本逐字一致；部分文章游戏内简体中文本身未翻译（显示英文），PDF 与游戏保持一致
-- 左侧栏导航、封面分类卡片、面包屑均为 PDF 内可点击链接（约 2200 个）
+- 左侧栏导航、分类目录页、封面分类卡片、面包屑均为 PDF 内可点击链接（约 2280 个）
 
 ## 文件 Files
 

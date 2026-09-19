@@ -20,8 +20,14 @@ Interactive web editions of the in-game Handbook from **Hackhub**, in Simplified
 | `hackhub-handbook-interactive-zh.html` | 中文可交互网页版（含真实搜索栏），下载后双击打开 / Chinese interactive edition with a working search bar — download and open locally |
 | `hackhub-handbook-interactive-en.html` | 英文可交互网页版（含真实搜索栏），下载后双击打开 / English interactive edition with a working search bar — download and open locally |
 
-> 使用方法：点击文件名 → Code 页面上的 **Raw**（或下载按钮）保存到本地，再用浏览器打开。GitHub 网页内直接预览 `.html` 只会显示源码。
-> Usage: open the file's page, save it locally via **Raw**, then open it in a browser — GitHub previews `.html` as source code only.
+> 在线预览：可直接用浏览器打开下面的链接，无需下载（由 htmlpreview.github.io 渲染）：
+> - [打开 Hackhub Handbook 中文互动版](https://htmlpreview.github.io/?https://github.com/Cocoblood9527/hackhub-handbook/blob/main/hackhub-handbook-interactive-zh.html)
+> - [Open Hackhub Handbook English Interactive Edition](https://htmlpreview.github.io/?https://github.com/Cocoblood9527/hackhub-handbook/blob/main/hackhub-handbook-interactive-en.html)
+>
+> Online preview: just open the links above in a browser — no download needed (rendered via htmlpreview.github.io).
+>
+> 本地使用：点击文件名 → Code 页面上的 **Raw**（或下载按钮）保存到本地，再用浏览器打开。GitHub 网页内直接预览 `.html` 只会显示源码。
+> Local use: open the file's page, save it locally via **Raw**, then open it in a browser — GitHub previews `.html` as source code only.
 
 ## 来源 Source
 

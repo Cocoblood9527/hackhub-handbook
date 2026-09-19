@@ -167,7 +167,7 @@ function renderContent(){
 }
 function render(){ renderCrumbs(); renderSidebar(); renderContent();
   const want = state.view==='art' ? '#art-'+state.art : (state.view==='cat'?'#cat-'+state.cat:(state.view==='search'?'#search':'#home'));
-  if(location.hash!==want) history.replaceState(null,'',want);
+  if(location.hash!==want){ try{ history.replaceState(null,'',want); }catch(e){ try{ location.hash=want; }catch(e2){} } }
 }
 function navHome(){ state={view:'home',cat:null,art:null,search:''}; render(); }
 function openCat(cat){ state.view='cat'; state.cat=cat; state.art=null; render(); }

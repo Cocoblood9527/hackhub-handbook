@@ -31,6 +31,6 @@ Interactive web editions of the in-game Handbook from **Hackhub**, in Simplified
 
 ## 来源 Source
 
-内容提取自 Hackhub 游戏客户端内置的手册数据（游戏：Hackhub，开发商：Popstar Games）。仅用于个人游戏查阅与学习，版权归原作者所有；如权利人认为不妥，请联系删除。
+内容提取自 Hackhub 游戏客户端内置的手册数据（游戏：HackHub - Ultimate Hacker Simulator，开发商：HotBunny，发行商：Games Operators / GAMIKE / G-DEVS.com，[Steam 页面](https://store.steampowered.com/app/2980270/HackHub__Ultimate_Hacker_Simulator/)）。仅用于个人游戏查阅与学习，版权归原作者所有；如权利人认为不妥，请联系删除。
 
-Content extracted from the Hackhub game client's built-in handbook data (game: Hackhub, developer: Popstar Games), for personal game reference and study only. All rights belong to the original developer; contact me to remove if needed.
+Content extracted from the game client's built-in handbook data (game: HackHub - Ultimate Hacker Simulator, developer: HotBunny, publishers: Games Operators / GAMIKE / G-DEVS.com, [Steam page](https://store.steampowered.com/app/2980270/HackHub__Ultimate_Hacker_Simulator/)), for personal game reference and study only. All rights belong to the original developer; contact me to remove if needed.
